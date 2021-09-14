@@ -286,6 +286,7 @@ def process_auth(args, config):
 
 
 def main():
+    print("EAI MEU CONSAGRADE!")
     cli_args = sys.argv[1:]
     cli(cli_args)
 

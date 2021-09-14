@@ -1,4 +1,6 @@
-FROM alpine:3.5
+FROM alpine:3.14
+
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
 RUN apk add --update-cache py3-pip ca-certificates py3-certifi py3-lxml\
                            python3-dev cython cython-dev libusb-dev build-base \
